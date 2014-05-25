@@ -6,5 +6,9 @@ class DashboardsController < ApplicationController
     @shouts = current_user.shouts
   end 
 
+  private
+
+  def shouts
+  end
   
 end

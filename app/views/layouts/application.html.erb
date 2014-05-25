@@ -20,7 +20,9 @@
   <% if alert %>
     <p><%= flash.alert %></p>
   <% end %>
-
+  <% if notice %>
+    <p><%= flash.notice %></p>
+  <% end %>
 <%= yield %>
 
 </body>
