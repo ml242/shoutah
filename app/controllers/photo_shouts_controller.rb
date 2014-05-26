@@ -1,6 +1,7 @@
 class PhotoShoutsController < ApplicationController
 
- 
+  #TODO fix duplication here and in text shouts
+  
   def create
     content = build_content
     shout = current_user.shouts.build(content: content)

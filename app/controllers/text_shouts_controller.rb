@@ -1,5 +1,6 @@
 class TextShoutsController < ApplicationController
 
+  #TODO fix duplication here and in photo shouts
  
   def create
     content = build_content
