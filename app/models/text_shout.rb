@@ -1,5 +1,6 @@
 class TextShout < ActiveRecord::Base
-  attr_accessible :body
+  belongs_to :user
+  # attr_accessible :body
 
   def index
     body

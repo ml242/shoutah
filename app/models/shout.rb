@@ -8,7 +8,12 @@ class Shout < ActiveRecord::Base
     where(content_type: 'TextShout')
   end
 
-
+  searchable do
+    text :content do
+      content.index
+    end
+    
+  end
 
 
 
